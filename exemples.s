@@ -5,7 +5,7 @@
 _string_access_exemple:		; void	string_access_exemple(char *s)
 	push rbx		; align stack (allow memory on stack for external func exec, i think, if i dont do that, i get a segfault)
 	xor rcx, rcx		; set rcx to zero, will be used as a counter
-	jmp loop		; exe loop label's instructions
+	jmp loop		; exe loop label's instructions, NOT NEEDED !! label do not mean it will not be executed
 
 loop:
 	push rcx		; save rcx because we call external func an it may be modified by that call and result in segfaults and/or undefined behavior

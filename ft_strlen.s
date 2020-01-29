@@ -1,24 +1,14 @@
 	global _ft_strlen
 	section .text
+
 _ft_strlen:
-	push rbp
-	mov rbp, rsp
+	xor rax, rax
 
-	cld 			; clear direction flag
-	xor rax, rax		; rax = 0
-	xor rcx, rcx		; rcx = 0
-	mov rsi, rdi		; lodsb loads from rsi
+loop:
+	cmp BYTE[rdi + rax], 0
+	je end
+	inc rax
+	jmp loop
 
-	jmp _loop
-
-_epilog:
-	mov rax, rcx
-	leave
+end:
 	ret
-
-_loop:
-	lodsb
-	cmp rax, 0
-	je _epilog
-	inc rcx
-	jmp _loop
