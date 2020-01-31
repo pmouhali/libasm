@@ -9,16 +9,16 @@ _old_ft_strlen:
 	xor rcx, rcx		; rcx = 0
 	mov rsi, rdi		; lodsb loads from rsi
 
-	jmp loop
+	jmp count
 
 epilog:
 	mov rax, rcx
 	leave
 	ret
 
-loop:
+count:
 	lodsb			; load one char from a string
 	cmp rax, 0
 	je epilog
 	inc rcx
-	jmp loop
+	jmp count

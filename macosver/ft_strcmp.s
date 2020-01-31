@@ -6,7 +6,7 @@ _ft_strcmp:
 	mov r8d, 1
 	mov r9d, -1
 
-loop:
+compare:
 	cmp dil, sil
 	cmovg eax, r8d
 	cmovl eax, r9d
@@ -16,7 +16,7 @@ loop:
 
 	inc rdi
 	inc rsi
-	jmp loop
+	jmp compare
 
 end:
 	ret

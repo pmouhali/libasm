@@ -4,11 +4,11 @@
 _ft_strlen:
 	xor rax, rax
 
-loop:
+count:
 	cmp BYTE[rdi + rax], 0
 	je end
 	inc rax
-	jmp loop
+	jmp count
 
 end:
 	ret
