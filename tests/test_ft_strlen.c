@@ -6,12 +6,12 @@
 /*   By: pmouhali <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/01 16:16:14 by pmouhali          #+#    #+#             */
-/*   Updated: 2020/02/01 16:24:09 by pmouhali         ###   ########.fr       */
+/*   Updated: 2020/02/01 17:51:06 by pmouhali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include "libasm.h"
+#include "../libasm.h"
 
 void	test_ft_strlen(void)
 {

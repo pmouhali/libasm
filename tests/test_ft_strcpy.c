@@ -6,12 +6,12 @@
 /*   By: pmouhali <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/01 16:22:05 by pmouhali          #+#    #+#             */
-/*   Updated: 2020/02/01 16:24:32 by pmouhali         ###   ########.fr       */
+/*   Updated: 2020/02/01 17:50:55 by pmouhali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include "libasm.h"
+#include "../libasm.h"
 
 void	test_ft_strcpy(void)
 {

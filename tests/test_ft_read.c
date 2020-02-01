@@ -6,13 +6,13 @@
 /*   By: pmouhali <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/01 16:26:45 by pmouhali          #+#    #+#             */
-/*   Updated: 2020/02/01 16:46:17 by pmouhali         ###   ########.fr       */
+/*   Updated: 2020/02/01 17:52:41 by pmouhali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <fcntl.h>
-#include "libasm.h"
+#include "../libasm.h"
 
 void	original_read(int fd, char *r)
 {
@@ -82,9 +82,9 @@ void	test_ft_read(void)
 	int i;
 	
 	printf("    FT_READ");
-	fd = open("./test.txt", O_RDONLY);
+	fd = open("./tests/test.txt", O_RDONLY);
 	original_read(fd, rr);
-	fd = open("./test.txt", O_RDONLY);
+	fd = open("./tests/test.txt", O_RDONLY);
 	my_read(fd, rf);
 	i = -1;
 	while (++i < 9)

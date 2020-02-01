@@ -6,7 +6,7 @@
 /*   By: pmouhali <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/01 12:11:36 by pmouhali          #+#    #+#             */
-/*   Updated: 2020/02/01 15:04:11 by pmouhali         ###   ########.fr       */
+/*   Updated: 2020/02/01 17:56:23 by pmouhali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,6 @@ int	ft_strcmp(char*, char*);
 char	*ft_strcpy(char*, char*);
 ssize_t	ft_write(int, const void*, size_t);
 ssize_t ft_read(int, void *, size_t);
+char *ft_strdup(const char*);
 
 #endif

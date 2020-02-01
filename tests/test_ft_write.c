@@ -6,12 +6,12 @@
 /*   By: pmouhali <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/01 16:46:53 by pmouhali          #+#    #+#             */
-/*   Updated: 2020/02/01 17:42:38 by pmouhali         ###   ########.fr       */
+/*   Updated: 2020/02/01 17:51:15 by pmouhali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include "libasm.h"
+#include "../libasm.h"
 
 void	original_write(char *rw, char *buf1, char *buf2)
 {
