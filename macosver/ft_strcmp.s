@@ -8,11 +8,13 @@ _ft_strcmp:
 
 compare:
 	cmp dil, sil
-	cmovg eax, r8d
-	cmovl eax, r9d
+	cmova eax, r8d
+	cmovb eax, r9d
 
 	cmp dil, 0 
 	je end
+	cmp eax, 0
+	jne end
 
 	inc rdi
 	inc rsi
