@@ -2,14 +2,18 @@ NAME = libasm.a
 
 FLAGS = -Wall -Wextra -Werror
 
-OBJS = 	macosver/ft_strcmp.o \
-	macosver/ft_strcpy.o \
-	macosver/ft_strlen.o \
+OBJS = 	mac_os/ft_strcmp.o \
+	mac_os/ft_strcpy.o \
+	mac_os/ft_strlen.o \
+	mac_os/ft_write.o \
+	mac_os/ft_read.o \
 
 $(NAME):
-	nasm -fmacho64 macosver/ft_strlen.s
-	nasm -fmacho64 macosver/ft_strcpy.s
-	nasm -fmacho64 macosver/ft_strcmp.s
+	nasm -fmacho64 mac_os/ft_strlen.s
+	nasm -fmacho64 mac_os/ft_strcpy.s
+	nasm -fmacho64 mac_os/ft_strcmp.s
+	nasm -fmacho64 mac_os/ft_write.s
+	nasm -fmacho64 mac_os/ft_read.s
 	ar rc $(NAME) $(OBJS)
 
 all: $(NAME)
@@ -22,4 +26,4 @@ fclean: clean
 re: fclean all
 
 test:
-	gcc -L./ -lasm main.c
+	gcc $(FLAGS) -L./ -lasm main.c
